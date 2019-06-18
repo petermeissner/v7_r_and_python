@@ -1,0 +1,155 @@
+/**
+ * virtual7 Theme for reveal.js
+ *
+ * By Maximilian Braun
+ */
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+// Include theme-specific fonts
+@import "../../../node_modules/roboto-fontface/css/roboto/sass/roboto-fontface";
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #ffffff;
+
+$vGreen: #A9C23F;
+$vGrey: #575756;
+
+$fallbackFonts: Arial, Helvetica, sans-serif;
+
+
+$mainColor: $vGrey;
+$headingColor: $vGrey;
+
+$mainFontSize: 42px;
+$mainFont: "Roboto-Regular", $fallbackFonts;
+$headingFont: "Roboto-Medium", $fallbackFonts;
+$headingTextShadow: none;
+$headingLetterSpacing: 0.1em;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: $vGreen;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+
+
+@mixin bodyBackground() {
+  background-size: 15%;
+  background: url("../../../lib/img/logo_virtual7_gross.png") no-repeat ;
+  background-size: 20%;
+  background-position-x: 99%;
+  background-position-y: 1%;
+}
+
+
+//linear-gradient(to top, $vGreen 0, $vGreen 30px, $backgroundColor 30px)
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+  .slogan {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: $vGreen;
+    padding: 10px 10px 10px 10px;
+    color: #ffffff;
+    font-family: "Roboto", $fallbackFonts;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+  }
+
+  .controls {
+    bottom: 50px
+  }
+
+  .progress {
+    bottom: inherit;
+    top: 0;
+    z-index: initial;
+  }
+
+  section img.plain {
+    border: initial;
+    box-shadow: initial;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .line.focus {
+    background: rgb(33, 66, 131);
+    color: #bababa;
+  }
+
+  .line.focus .hljs-comment, .line.focus .hljs-quote {
+    color: #93a1a1;
+  }
+
+  section[data-run-in-terminal] .container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 70vh;
+  }
+
+  @keyframes blackblur {
+    from {
+      text-shadow: initial;
+      color: $headingColor;
+    }
+    to {
+      text-shadow: 0 0 100px $headingColor;
+      color: transparent;
+    }
+  }
+
+  .slides section {
+    .fragment.has-animation {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .fragment.has-animation.blurry.current-fragment {
+      animation: blackblur 5s alternate;
+      text-shadow: 0 0 100px $headingColor;
+      color: transparent;
+    }
+
+    .fragment.has-animation.blurry.visible {
+      text-shadow: 0 0 100px $headingColor;
+      color: transparent;
+    }
+
+    .fragment.highlight-red.visible {
+      color: rgb(189, 47, 39);
+    }
+  }
+}
+
+
+
+
+.reveal {
+  img.vault-logo {
+    max-height: 60vh;
+  }
+}
