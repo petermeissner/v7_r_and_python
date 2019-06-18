@@ -1,0 +1,116 @@
+---
+title: "<br><br>.n[RRRRRRRRIDICULOUS LANGUAGE WARS]"
+subtitle: "R AND PYTHON BF4EVER"
+author: ".n[Peter Meißner]"
+institute: ""
+date: ".n[2019-06-27<br> .small[(updated: `r Sys.Date()`)]]"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: v7_conf.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+
+# Lets make it short
+
+.green.keykey[Use R for everything]
+
+
+
+
+---
+
+# Lets make it short
+
+.green.keykey[Use Python for everything]
+
+
+
+---
+
+# Lets make it short
+
+.center.green.keykey[It's never that simple <br>- right!?]
+
+---
+
+
+# Lets start over
+
+## R and Python
+
+
+- .bold[Scripting languages]
+
+
+
+--
+
+
+- .bold[Functional]
+    - (can do)
+
+
+--
+
+
+- .bold[Rule]
+    - statistics, 
+    - analytics, 
+    - data science, 
+    - AI
+
+
+
+---
+
+# Lets start over
+
+## R versus Python
+
+- .bold[&#128498; Different traditions]
+
+
+- .bold[&#128498; Different strengths]
+
+
+- .bold[&#128498; Different user base]
+
+
+
+--
+
+
+<br>
+- .bold[&#10084; Overlap]
+    - data science, stats, AI
+
+
+- .bold[&#10084; Synergy]
+    - one language
+    - div. teams
+
+
+
+- .bold[&#10084; Inspiration]
+    - data.frame
+    - data.table
+    - shiny
+    - sciKit learn
+    - web scraping
+
+
+---
+
+# Lets start over
+
+.green.keykey[R &#10084; Python
+<br>&nbsp;&nbsp;&nbsp;
+Python &#10084; R]
+
+
