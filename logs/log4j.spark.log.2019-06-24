@@ -1,0 +1,77 @@
+19/06/24 13:02:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/06/24 13:02:55 INFO SparkContext: Running Spark version 2.4.3
+19/06/24 13:02:55 INFO SparkContext: Submitted application: sparklyr
+19/06/24 13:02:55 INFO SecurityManager: Changing view acls to: peter.meissner
+19/06/24 13:02:55 INFO SecurityManager: Changing modify acls to: peter.meissner
+19/06/24 13:02:55 INFO SecurityManager: Changing view acls groups to: 
+19/06/24 13:02:55 INFO SecurityManager: Changing modify acls groups to: 
+19/06/24 13:02:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(peter.meissner); groups with view permissions: Set(); users  with modify permissions: Set(peter.meissner); groups with modify permissions: Set()
+19/06/24 13:02:55 INFO Utils: Successfully started service 'sparkDriver' on port 51662.
+19/06/24 13:02:55 INFO SparkEnv: Registering MapOutputTracker
+19/06/24 13:02:56 INFO SparkEnv: Registering BlockManagerMaster
+19/06/24 13:02:56 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/06/24 13:02:56 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/06/24 13:02:56 INFO DiskBlockManager: Created local directory at C:\Users\peter.meissner\AppData\Local\Temp\blockmgr-4b6b75d7-211a-4bde-9d69-ed324b734663
+19/06/24 13:02:56 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+19/06/24 13:02:56 INFO SparkEnv: Registering OutputCommitCoordinator
+19/06/24 13:02:56 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/06/24 13:02:56 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://127.0.0.1:4040
+19/06/24 13:02:56 INFO SparkContext: Added JAR file:/C:/Users/peter.meissner/OneDrive%20-%20virtual7%20GmbH/Dokumente/R/win-library/3.5/sparklyr/java/sparklyr-2.3-2.11.jar at spark://127.0.0.1:51662/jars/sparklyr-2.3-2.11.jar with timestamp 1561374176302
+19/06/24 13:02:56 INFO Executor: Starting executor ID driver on host localhost
+19/06/24 13:02:56 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51703.
+19/06/24 13:02:56 INFO NettyBlockTransferService: Server created on 127.0.0.1:51703
+19/06/24 13:02:56 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/06/24 13:02:56 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 51703, None)
+19/06/24 13:02:56 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:51703 with 912.3 MB RAM, BlockManagerId(driver, 127.0.0.1, 51703, None)
+19/06/24 13:02:56 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 51703, None)
+19/06/24 13:02:56 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 51703, None)
+19/06/24 13:02:57 INFO SharedState: loading hive config file: file:/C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/conf/hive-site.xml
+19/06/24 13:02:57 INFO SharedState: Setting hive.metastore.warehouse.dir ('C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive') to the value of spark.sql.warehouse.dir ('C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive').
+19/06/24 13:02:57 INFO SharedState: Warehouse path is 'C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive'.
+19/06/24 13:02:57 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/06/24 13:02:59 INFO HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+19/06/24 13:03:00 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/06/24 13:03:01 INFO ObjectStore: ObjectStore, initialize called
+19/06/24 13:03:01 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/06/24 13:03:01 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/06/24 13:03:02 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/06/24 13:03:03 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/24 13:03:03 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/24 13:03:03 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/24 13:03:03 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/24 13:03:03 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/06/24 13:03:03 INFO ObjectStore: Initialized ObjectStore
+19/06/24 13:03:03 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+19/06/24 13:03:04 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+19/06/24 13:03:04 INFO HiveMetaStore: Added admin role in metastore
+19/06/24 13:03:04 INFO HiveMetaStore: Added public role in metastore
+19/06/24 13:03:04 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_all_databases
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_all_databases	
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_functions: db=default pat=*
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+19/06/24 13:03:04 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+19/06/24 13:03:04 INFO SessionState: Created HDFS directory: C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive/peter.meissner
+19/06/24 13:03:04 INFO SessionState: Created local directory: C:/Users/PETER~1.MEI/AppData/Local/Temp/76968ebb-0d36-40ed-9346-e1249e8d5faf_resources
+19/06/24 13:03:04 INFO SessionState: Created HDFS directory: C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive/peter.meissner/76968ebb-0d36-40ed-9346-e1249e8d5faf
+19/06/24 13:03:04 INFO SessionState: Created local directory: C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive/76968ebb-0d36-40ed-9346-e1249e8d5faf
+19/06/24 13:03:04 INFO SessionState: Created HDFS directory: C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive/peter.meissner/76968ebb-0d36-40ed-9346-e1249e8d5faf/_tmp_space.db
+19/06/24 13:03:04 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is C:/Users/peter.meissner/AppData/Local/spark/spark-2.4.3-bin-hadoop2.7/tmp/hive
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_database: default
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_database: global_temp
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_database: global_temp	
+19/06/24 13:03:04 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_database: default
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_database: default
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/24 13:03:04 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/24 13:03:04 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/06/24 13:03:04 INFO CodeGenerator: Code generated in 194.753001 ms
+19/06/24 13:03:05 INFO HiveMetaStore: 0: get_database: default
+19/06/24 13:03:05 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/24 13:03:05 INFO HiveMetaStore: 0: get_database: default
+19/06/24 13:03:05 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_database: default	
+19/06/24 13:03:05 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/06/24 13:03:05 INFO audit: ugi=peter.meissner	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
